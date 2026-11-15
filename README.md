@@ -13,9 +13,9 @@ Historique de maintenance de 30 rames voyageurs sur 8 systèmes (portes, climati
 ## Approach – Démarche
 | Étape | Notebook | Contenu |
 |---|---|---|
-| 1. Nettoyage | `01_nettoyage.ipynb` | Doublons supprimés, catégories harmonisées, dates au format mixte converties, valeurs impossibles neutralisées (durées négatives, coûts aberrants, immobilisations incohérentes, types d'intervention mal étiquetés). Aucune intervention réelle supprimée, aucune valeur inventée, chaque correction tracée. |
-| 2. Exploration RAMS | `02_exploration.ipynb` | MTTR, MDT, MTBF, Pareto, disponibilité, saisonnalité, analyses par rame et par équipe, analyse de Weibull avec données censurées. |
-| 3. Modélisation | `03_modelisation.ipynb` | Prédiction d'une panne à 30 jours, découpage temporel (apprentissage 2023-2024, test 2025), comparaison d'une référence par système, d'une régression logistique et d'une forêt aléatoire. |
+| 1. Nettoyage | `01-nettoyage-railway.ipynb` | Doublons supprimés, catégories harmonisées, dates au format mixte converties, valeurs impossibles neutralisées (durées négatives, coûts aberrants, immobilisations incohérentes, types d'intervention mal étiquetés). Aucune intervention réelle supprimée, aucune valeur inventée, chaque correction tracée. |
+| 2. Exploration RAMS | `02-exploration-railway.ipynb` | MTTR, MDT, MTBF, Pareto, disponibilité, saisonnalité, analyses par rame et par équipe, analyse de Weibull avec données censurées. |
+| 3. Modélisation | `03-modelisation-railway.ipynb` | Prédiction d'une panne à 30 jours, découpage temporel (apprentissage 2023-2024, test 2025), comparaison d'une référence par système, d'une régression logistique et d'une forêt aléatoire. |
 
 ## Key results – Résultats clés
 - **Les portes coûtent le plus d'heures** : 4 843 h d'immobilisation (≈ 25 % du total), à cause de leur fréquence de panne (MTBF ≈ 98 jours par rame), pas de leur gravité. Les pertes restent dispersées : 5 systèmes sur 8 pour atteindre 80 % des heures perdues.
@@ -53,9 +53,9 @@ Python (pandas, numpy), visualisation (matplotlib, seaborn), indicateurs RAMS (M
 │   ├── maintenance_rames_2023_2025.csv   # données brutes (synthétiques)
 │   └── maintenance_rames_clean.csv       # données nettoyées
 ├── notebooks/
-│   ├── 01_nettoyage.ipynb
-│   ├── 02_exploration.ipynb
-│   └── 03_modelisation.ipynb
+│   ├── 01-nettoyage-railway.ipynb
+│   ├── 02-exploration-railway.ipynb
+│   └── 03-modelisation-railway.ipynb
 └── requirements.txt
 ```
 
