@@ -14,7 +14,7 @@ Historique de maintenance de 30 rames voyageurs sur 8 systèmes (portes, climati
 | Étape | Notebook | Contenu |
 |---|---|---|
 | 1. Nettoyage | `01-nettoyage-railway.ipynb` | Doublons supprimés, catégories harmonisées, dates au format mixte converties, valeurs impossibles neutralisées (durées négatives, coûts aberrants, immobilisations incohérentes, types d'intervention mal étiquetés). Aucune intervention réelle supprimée, aucune valeur inventée, chaque correction tracée. |
-| 2. Exploration RAMS | `02-exploration-railway.ipynb` | MTTR, MDT, MTBF, Pareto, disponibilité, saisonnalité, analyses par rame et par équipe, analyse de Weibull avec données censurées. |
+| 2. Exploration RAMS | `02-eda-railway.ipynb` | MTTR, MDT, MTBF, Pareto, disponibilité, saisonnalité, analyses par rame et par équipe, analyse de Weibull avec données censurées. |
 | 3. Modélisation | `03-modelisation-railway.ipynb` | Prédiction d'une panne à 30 jours, découpage temporel (apprentissage 2023-2024, test 2025), comparaison d'une référence par système, d'une régression logistique et d'une forêt aléatoire. |
 
 ## Key results – Résultats clés
