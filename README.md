@@ -63,4 +63,4 @@ Python (pandas, numpy), visualisation (matplotlib, seaborn), indicateurs RAMS (M
 ```bash
 pip install -r requirements.txt
 ```
-Dans les notebooks, remplacez les chemins Kaggle (`/kaggle/input/...`) par `../data/...`.
+Lancez ensuite les notebooks dans l'ordre (01, 02, 03) depuis le dossier `notebooks/`.
